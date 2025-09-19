@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Belleza y Estilo Qro | Catálogos Digitales</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+        
+        .profile-section {
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .profile-section h2 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .profile-section p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .catalog-section {
+            padding: 25px 20px;
+        }
+        
+        .catalog-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .catalog-btn {
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .catalog-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .catalog-btn.avon {
+            background: linear-gradient(135deg, #E6007E 0%, #C4006A 100%);
+            box-shadow: 0 4px 15px rgba(230, 0, 126, 0.3);
+        }
+        
+        .catalog-btn.natura {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .catalog-btn.casa {
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+        }
+        
+        .promo-section {
+            background: #fff3cd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .promo-section h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .promo-section p {
+            color: #856404;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .contact-section {
+            padding: 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .feature-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
+        
+        .feature-box .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-box h4 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .feature-box p {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .social-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌸 Belleza y Estilo </h1>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Premium Beauty Collection</h2>
+            <p>📍 Querétaro</p>
+            <p>✨ Catálogos digitales</p>
+        </div>
+        
+        <div class="catalog-section">
+            <h2 class="catalog-title">📱 Catálogos Digitales Disponibles</h2>
+            
+            <a href="https://encurtador.naturaavon.com/jfmDeZ1" target="_blank" class="catalog-btn avon">
+                💄 VER CATÁLOGO AVON
+                <div style="font-size: 12px; margin-top: 5px; opacity: 0.9;">Belleza y Cuidado Personal</div>
+            </a>
+            
+            <a href="https://short.natura.com/luLCDMc" target="_blank" class="catalog-btn natura">
+                🌿 VER CATÁLOGO NATURA
+                <div style="font-size: 12px; margin-top: 5px; opacity: 0.9;">Productos Naturales</div>
+            </a>
+            
+            <a href="https://short.natura.com/l4q4JPN" target="_blank" class="catalog-btn casa">
+                🏠 VER CATÁLOGO CASA & ESTILO
+                <div style="font-size: 12px; margin-top: 5px; opacity: 0.9;">Decoración del Hogar</div>
+            </a>
+            
+            <div class="promo-section">
+                <h3>🔥 ¡OFERTAS ESPECIALES DE LANZAMIENTO!</h3>
+                
+                <div style="background: white; padding: 15px; border-radius: 10px; margin: 15px 0; color: #333;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <strong style="color: #856404;">Kit Hidratación Completa</strong>
+                        <span style="background: #000; color: #FFD700; padding: 3px 10px; border-radius: 15px; font-size: 12px; font-weight: bold;">40% OFF</span>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 13px; color: #666;">• 2 Jabones barra masaje + Pulpa hidratante + Exfoliante</p>
+                    <div style="margin-top: 8px;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 14px;">$809</span>
+                        <strong style="font-size: 20px; margin-left: 10px; color: #856404;">$485.40</strong>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 10px; margin: 15px 0; color: #333;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <strong style="color: #856404;">Perfume Natura Homem Neo</strong>
+                        <span style="background: #000; color: #FFD700; padding: 3px 10px; border-radius: 15px; font-size: 12px; font-weight: bold;">35% OFF</span>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 13px; color: #666;">Eau de parfum masculino 100ml - 🆕 LANZAMIENTO</p>
+                    <div style="margin-top: 8px;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 14px;">$997</span>
+                        <strong style="font-size: 20px; margin-left: 10px; color: #856404;">$648.05</strong>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 10px; margin: 15px 0; color: #333;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <strong style="color: #856404;">Litromania - Crema 6 en 1</strong>
+                        <span style="background: #000; color: #FFD700; padding: 3px 10px; border-radius: 15px; font-size: 12px; font-weight: bold;">+40% OFF</span>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 13px; color: #666;">Crema corporal 1L - 4 variantes disponibles</p>
+                    <div style="margin-top: 8px;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 14px;">$243</span>
+                        <strong style="font-size: 20px; margin-left: 10px; color: #856404;">$136.99</strong>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 10px; margin: 15px 0; color: #333;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <strong style="color: #856404;">Desodorantes 72h - 3x2</strong>
+                        <span style="background: #000; color: #FFD700; padding: 3px 10px; border-radius: 15px; font-size: 12px; font-weight: bold;">PROMO</span>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 13px; color: #666;">Lleva 3 y paga 2 - Nueva fórmula 72 horas</p>
+                    <div style="margin-top: 8px;">
+                        <strong style="font-size: 20px; color: #856404;">3 x $270</strong>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #856404;">
+                    🎁 Muestras gratis con tu primer pedido<br>
+                    💳 Pagos semanales disponibles<br>
+                    🚚 Entrega sin costo 
+                </p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">🚚</div>
+                    <h4>Entrega Rápida</h4>
+                    <p>7-12 días hábiles</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">💳</div>
+                    <h4>Pago Flexible</h4>
+                    <p>Semanal o quincenal</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">🎁</div>
+                    <h4>Promociones</h4>
+                    <p>Ofertas cada semana</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">📱</div>
+                    <h4>Atención 24/7</h4>
+                    <p>Por WhatsApp</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h3 style="margin-bottom: 10px; color: #333;">¿Lista para hacer tu pedido?</h3>
+            <a href="https://wa.me/5214424349329?text=Hola! Vi tu catálogo digital y me interesa hacer un pedido 😊" class="whatsapp-btn">
+                📱 PEDIR POR WHATSAPP
+            </a>
+            
+            <div class="social-links">
+                <a href="#" class="social-btn" title="Instagram">📷</a>
+                <a href="#" class="social-btn" title="Facebook">📘</a>
+                <a href="#" class="social-btn" title="TikTok">🎵</a>
+            </div>
+            
+            <p style="margin-top: 15px; color: #666; font-size: 14px;">
+                <strong>Horario de atención:</strong><br>
+                Lun-Vie: 1:00 PM - 9:00 PM<br>
+                Sábados: 9:00 AM - 6:00 PM
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>🌸 Belleza y Estilo Qro | Querétaro, México</p>
+            <p style="margin-top: 5px; opacity: 0.8;">Consultora Independiente</p>
+        </div>
+    </div>
+</body>
+</html>
